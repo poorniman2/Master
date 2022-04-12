@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Practice Suite" duration-ms="65165" started-at="2022-04-12T06:10:14Z" finished-at="2022-04-12T06:11:20Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test Basics 1" duration-ms="65165" started-at="2022-04-12T06:10:14Z" finished-at="2022-04-12T06:11:20Z">
+      <class name="parallel2.parallelRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel2.parallelRun@1e67b872]" name="setUpClass" is-config="true" duration-ms="702" started-at="2022-04-12T11:40:14Z" finished-at="2022-04-12T11:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" duration-ms="36886" started-at="2022-04-12T11:40:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-12T11:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify alerts on webpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[alerts check]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" duration-ms="22878" started-at="2022-04-12T11:40:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-12T11:41:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify frames present on webpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Frames check]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel2.parallelRun@1e67b872]" name="tearDownClass" is-config="true" duration-ms="4682" started-at="2022-04-12T11:41:15Z" finished-at="2022-04-12T11:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel2.parallelRun -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
+</testng-results>
