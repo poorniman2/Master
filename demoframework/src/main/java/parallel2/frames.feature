@@ -1,3 +1,4 @@
+@Regression
 Feature: Frames check
 Scenario: Verify frames present on webpage
 Given User is on "https://demoqa.com/frames" frames Page
