@@ -11,7 +11,7 @@ public class configReader {
 	{
 		prop=new Properties();//./src/test/resources/config/config.properties
 		try {
-			FileInputStream ip=new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
+			FileInputStream ip=new FileInputStream("C:\\Users\\PoornimaN2\\git\\Master\\demoframework\\resources\\config\\config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {

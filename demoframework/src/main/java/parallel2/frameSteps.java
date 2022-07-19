@@ -21,7 +21,10 @@ public class frameSteps {
 	public void user_is_on_frames_page(String url) {
 		DriverFactory.getDriver().get(url);
 		DriverFactory.getDriver().manage().window().maximize();
+		
+		
 	}
+	
 
 	@When("User clicks on the below frame button")
 	public void user_clicks_on_the_below_frame_button(DataTable data) throws InterruptedException {

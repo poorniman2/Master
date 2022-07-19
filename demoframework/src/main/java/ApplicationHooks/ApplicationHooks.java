@@ -23,6 +23,7 @@ public class ApplicationHooks {
 	public void getProperty() {
 		configreader = new configReader();
 		prop = configreader.init_prop();
+		System.out.println("demo");
 	}
 
 	@Before(order = 1)
