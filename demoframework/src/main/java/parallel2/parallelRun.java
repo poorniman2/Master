@@ -5,10 +5,11 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+
 //@RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:parallel2", glue = { "parallel2",
-		"ApplicationHooks" }, monochrome = true, plugin = { "pretty",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, publish = true)
+		"ApplicationHooks" }, monochrome = true,plugin = { "pretty" }, publish = true
+				)
 	
 	public class parallelRun extends AbstractTestNGCucumberTests  {
 		@Override

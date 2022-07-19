@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Practice Suite" duration-ms="65165" started-at="2022-04-12T06:10:14Z" finished-at="2022-04-12T06:11:20Z">
+  <suite name="Default suite" duration-ms="4711" started-at="2022-06-01T07:02:27Z" finished-at="2022-06-01T07:02:31Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@67784306]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Basics 1" duration-ms="65165" started-at="2022-04-12T06:10:14Z" finished-at="2022-04-12T06:11:20Z">
+    <test name="Default test" duration-ms="4711" started-at="2022-06-01T07:02:27Z" finished-at="2022-06-01T07:02:31Z">
       <class name="parallel2.parallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel2.parallelRun@1e67b872]" name="setUpClass" is-config="true" duration-ms="702" started-at="2022-04-12T11:40:14Z" finished-at="2022-04-12T11:40:15Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel2.parallelRun@67784306]" name="setUpClass" is-config="true" duration-ms="453" started-at="2022-06-01T07:02:27Z" finished-at="2022-06-01T07:02:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" duration-ms="36886" started-at="2022-04-12T11:40:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-12T11:40:52Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@67784306]" name="runScenario" duration-ms="191" started-at="2022-06-01T07:02:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-01T07:02:27Z">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,18 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at factory.DriverFactory.init_driver(DriverFactory.java:46)
+at ApplicationHooks.ApplicationHooks.launchBrowser(ApplicationHooks.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@1e67b872]" name="runScenario" duration-ms="22878" started-at="2022-04-12T11:40:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-12T11:41:15Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel2.parallelRun@67784306]" name="runScenario" duration-ms="17" started-at="2022-06-01T07:02:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-01T07:02:27Z">
           <params>
             <param index="0">
               <value>
@@ -43,14 +51,22 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at factory.DriverFactory.init_driver(DriverFactory.java:46)
+at ApplicationHooks.ApplicationHooks.launchBrowser(ApplicationHooks.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel2.parallelRun@1e67b872]" name="tearDownClass" is-config="true" duration-ms="4682" started-at="2022-04-12T11:41:15Z" finished-at="2022-04-12T11:41:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel2.parallelRun@67784306]" name="tearDownClass" is-config="true" duration-ms="4036" started-at="2022-06-01T07:02:27Z" finished-at="2022-06-01T07:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- parallel2.parallelRun -->
-    </test> <!-- Test Basics 1 -->
-  </suite> <!-- Practice Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

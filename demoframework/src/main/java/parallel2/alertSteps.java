@@ -1,5 +1,6 @@
 package parallel2;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +22,26 @@ public class alertSteps {
 	public void user_is_on_page(String url) {
 		DriverFactory.getDriver().get(url);
 		DriverFactory.getDriver().manage().window().maximize();
+		String s1= "my name is poornima";
+		String strArray[] = s1.split(" ");
+		System.out.println("size of string array is "+strArray.length);
+		List<StringBuilder> s2 =new ArrayList<StringBuilder>();
+		for(int i=0;i<strArray.length;i++)
+		{
+			String s3=strArray[i];
+			StringBuilder input1 = new StringBuilder();
+			input1.append(s3);
+			input1.reverse();
+			s2.add(input1);
+			
+			
+			
+		}
+		System.out.println("final string is "+s2);
+		 for (int k = 0; k < s2.size(); k++) {
+	            // Printing the elements of String array
+	            System.out.print(s2.get(k) + " ");
+	        }
 	}
 
 	@When("User clicks on the below alert button")
