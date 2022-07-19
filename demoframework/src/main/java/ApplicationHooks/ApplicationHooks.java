@@ -24,6 +24,9 @@ public class ApplicationHooks {
 		configreader = new configReader();
 		prop = configreader.init_prop();
 		System.out.println("demo");
+		System.out.println("demo1");
+		System.out.println("demo2");
+		System.out.println("demo3");
 	}
 
 	@Before(order = 1)
